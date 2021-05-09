@@ -1,0 +1,184 @@
+.ProjectInfo {
+  background-color: #fff;
+  padding: 1.9rem 0.9rem 0.9rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  position: relative;
+  &__dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #b807b8;
+    margin-bottom: 1rem;
+  }
+  &__ContentBody {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
+  &__DotBox {
+    position: absolute;
+    top: 14rem;
+    left: 1rem;
+    background-color: #fff;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    height: auto;
+    // width: 10rem;
+    padding: 2.5rem 1.25rem 2.5rem 0;
+    z-index: 1000;
+    box-shadow: 2px 3px 5px rgba(#000, 0.16);
+    overflow-x: hidden;
+
+    ul {
+      list-style: none;
+      max-height: 25rem;
+      overflow-y: auto;
+      padding-right: 1.25rem;
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border: 1px solid #707070;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgba(#081047, 0.26);
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(#081047, 0.26);
+      }
+      li {
+        border-bottom: 1px solid #707070;
+        width: 8rem;
+        text-align: center;
+        padding: 1.3rem;
+        color: #081047;
+        font-size: 1.3rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.StatisticInfo {
+  // height: 100vh;
+  &__ContentHead {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 2rem;
+    position: relative;
+    right: 1rem;
+    top: -5rem;
+    width: 100%;
+    & > *:not(:first-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  &__head {
+    background-color: #fff;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    box-shadow: 1px 2px 3px rgba(#000, 0.4);
+    padding: 3.4rem 0rem 3.4rem 0rem;
+    width: 10%;
+    cursor: pointer;
+    text-align: center;
+    p {
+      color: #081047;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+  &__headblue {
+    background-color: #081047;
+    p {
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  }
+  &__ContentBody {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  &__ContentBox {
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 6px #9c9b9b;
+    width: 22%;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    &_TxtBox {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &-Title {
+      color: #081047;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    &-Num {
+      color: #909fd6;
+      font-size: 4rem;
+      font-weight: bold;
+      border-radius: 50%;
+      box-shadow: 1px 1px 4px #9c9b9bd0;
+      padding: 1rem;
+    }
+    img {
+      width: 11rem;
+      height: 11rem;
+      margin-top: 1rem;
+    }
+  }
+}
+.StatisticInfo__panel {
+  background-color: #ededf8;
+  // margin: -5rem 0;
+  padding: 10rem 3rem 5rem 3rem;
+  min-height: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+  border-bottom-left-radius: 8rem;
+}
+.StatisticInfo__title {
+  background-color: #b807b8;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  position: absolute;
+  top: -9rem;
+  padding: 2rem 5rem 3rem 5rem;
+  color: #fff;
+  font-size: 2rem;
+  width: max-content;
+  text-align: center;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
